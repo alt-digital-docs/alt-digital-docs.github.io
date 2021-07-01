@@ -8,6 +8,7 @@
 - icons are .svg, images without background are .png and the rest are .jpg. In development, assets can become .webp to optimise for web.
 - preoptimise assets on https://kraken.io/web-interface. Choose LOSSLESS option.
 - if there are multiple states for icons (dark mode, light-dark header etc.), multiple versions are included in bundle. Exeptions are .svg icons which can be transformed in communication with developers.
+- favicon in .ico format (https://realfavicongenerator.net)
 
 ### Pages
 - there is 404
@@ -16,6 +17,7 @@
 - have a general idea of hover effects, scroll effects and interaction animations
 - linked pages in prototype are nice to have but only if it dosen't take a lot of time
 - "made by ALT" with website link in footer
+- check the need for privacy/cookie policy
 
 ### Errors
 - if it's neccessary, create global error interface when something goes wrong (ie. API calls)
