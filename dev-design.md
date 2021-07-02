@@ -17,6 +17,7 @@
 - run lighthouse and check `SEO` and best `practices` and fix accordingly
 - inputs have validation errors
 - modals have body scroll lock `https://www.npmjs.com/package/body-scroll-lock`
+- important modals that have to be crawled have deep link
 
 ### CI/CD
 - define if it has staging server
