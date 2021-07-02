@@ -7,6 +7,7 @@
 - check with real android & iOS devices
 - check asset directory if some are unreasonably big
 - check if it needs to have analytics
+- has favicon.ico
 
 ### Pages
 - make optimal choice between api calls that are server or client rendered
