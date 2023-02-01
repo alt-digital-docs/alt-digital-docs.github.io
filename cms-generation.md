@@ -6,11 +6,9 @@
 
 | Parameter    | Type              | Description |
 |:-------------|:------------------|:------------|
-| project      | Object            | An object that contains information about a project, including its name and URL. The object has two properties:
-
-name: a string that represents the name of the project.
-url: a string that represents the URL associated with the project. |
-| out of stock | good and plenty   | nice        |
+| project      | Object            | An object that contains information about a project, including its name and URL. The object has two properties: `<name: string>`: represents the name of the project. `<url: string>`: represents the URL associated with the project. |
+| i18n | Object  | An object that contains information about the internationalization of a project. This object has one property `<locales>` which is an array of objects, each representing a language. Each language object has two properties: | `<name: string>`: represents the name of the language. 
+`<code: string>`: a string that represents the code for the language. | |
 | ok           | good `oreos`      | hmm         |
 | ok           | good `zoute` drop | yumm        |
 
