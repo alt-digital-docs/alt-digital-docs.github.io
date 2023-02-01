@@ -13,10 +13,10 @@
 | components | Object | Here you define the `<Component>` items that will be included in the CMS. The return from the API is an object `<Component>` |
 
 
-### `<email>` Object
+### `email` Object
 The following is the definition of the email object:
-- `<to>: string` `<required>`: Here is where you specify the email address that will receive messages from form submissions (a global email address for all forms)
-- `<endpoints: (property) endpoints: { [endpoint: string]: MailEndpoint>}`: Here is where you specify the endpoints needed for the project. Here is the structure:
+- `to: <string>` `<required>`: Here is where you specify the email address that will receive messages from form submissions (a global email address for all forms)
+- `endpoints: <endpoints: { [endpoint: string]: MailEndpoint>}> <required>`: Here is where you specify the endpoints needed for the project. Here is the structure:
 {% capture some_var %}
 {% highlight some_language linenos %}
 [endpoint: string]: {
@@ -34,7 +34,84 @@ The following is the definition of the email object:
 {% include fix_linenos.html code=some_var %}
 
 
-
+### `collections` Object
+The following is the definition of the collections object:
+{% capture some_var %}
+{% highlight some_language linenos %}
+[collection: string]: {
+    name: string,
+    schema: {
+        [key: string]: {
+            name: string,
+            i18n: boolean | undefined,
+            required: boolean | undefined
+            hasListPreview: boolean | undefined,
+            isSearchable: boolean | undefined,
+            isHiddenInApi: boolean | undefined,
+            notEditable: boolean | undefined
+            unique: boolean | undefined,
+            type: {
+                name: 'string',
+                maxChars?: number,
+                validation?: 'link' | 'email'
+            } | {
+                name: 'number'
+            } | {
+                name: 'richtext'
+            } | {
+                name: 'dropdown',
+                items: {
+                    [key: string]: {
+                        value: string,
+                        name: string
+                    }[]
+                }
+            } | {
+                name: 'configurator',
+                enabledElements: ('title' | 'quote' | 'media' | 'videoService')[]
+            } | {
+                name: 'date'
+            } | {
+                name: 'color'
+            } | {
+                name: 'toggle',
+                default: boolean
+            } | {
+                name: 'tags',
+                maxCount?: number
+            } | {
+                name: 'map',
+                center: {
+                    lat: number,
+                    lng: number
+                }
+            } | {
+                name: 'component',
+                schemaFrom: string,
+                schemaFromFieldName: string,
+                referenceExisting: boolean
+            } | {
+                name: 'collection',
+                schemaFrom: string,
+                schemaFromFieldName: string,
+                referenceExisting: boolean
+            } | {
+                name: 'media',
+                multiple: boolean,
+                types?: ('images' | 'videos')[]
+            } | {
+                name: 'video',
+                provider: ('youtube' | 'vimeo')[]
+            } | {
+                name: 'account'
+            }
+            }
+        }
+    }
+}
+{% endhighlight %}
+{% endcapture %}
+{% include fix_linenos.html code=some_var %}
 
 ## CMS generation
 - To change the CMS configuration, first stop the Docker container
