@@ -6,7 +6,10 @@
 
 | Parameter    | Type              | Description |
 |:-------------|:------------------|:------------|
-| project      | Object            | An object that contains information about a project, including its name and URL. The object has two properties: name: a string that represents the name of the project. url: a string that represents the URL associated with the project. |
+| project      | Object            | An object that contains information about a project, including its name and URL. The object has two properties:
+
+name: a string that represents the name of the project.
+url: a string that represents the URL associated with the project. |
 | out of stock | good and plenty   | nice        |
 | ok           | good `oreos`      | hmm         |
 | ok           | good `zoute` drop | yumm        |
