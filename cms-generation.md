@@ -13,17 +13,14 @@
 | components | Object | Here you define the `<Component>` items that will be included in the CMS. The return from the API is an object `<Component>` |
 
 
-### Email API
+### `<email>` Object
+The following is the definition of the email object:
+- `<to>: string` `<required>`: Here is where you specify the email address that will receive messages from form submissions (a global email address for all forms). 
+
 
 {% capture some_var %}
 {% highlight some_language linenos %}
-<Link {...props}>
-            <a>
-                {child ? cloneElement(child, {
-                    className: className || undefined,
-                }) : children}
-            </a>
-        </Link>
+
 {% endhighlight %}
 {% endcapture %}
 {% include fix_linenos.html code=some_var %}
