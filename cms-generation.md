@@ -15,15 +15,26 @@
 
 ### `<email>` Object
 The following is the definition of the email object:
-- `<to>: string` `<required>`: Here is where you specify the email address that will receive messages from form submissions (a global email address for all forms). 
-
-
+- `<to>: string` `<required>`: Here is where you specify the email address that will receive messages from form submissions (a global email address for all forms)
+- `<endpoints: (property) endpoints: { [endpoint: string]: MailEndpoint>}`: Here is where you specify the endpoints needed for the project. Here is the structure:
 {% capture some_var %}
 {% highlight some_language linenos %}
-
+[endpoint: string]: {
+    subject: string,
+    schema: {
+        [key: string]: {
+            name: string,
+            type: string | number,
+            reqired: string | undefined
+        }
+    }
+}
 {% endhighlight %}
 {% endcapture %}
 {% include fix_linenos.html code=some_var %}
+
+
+
 
 ## CMS generation
 - To change the CMS configuration, first stop the Docker container
