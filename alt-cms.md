@@ -41,40 +41,54 @@ Every field can have these props:
 - `unique`: boolean representing if the field must be unique
 - `type`: string representing the field type (see below for more info)
 
-#### Field types
+
+### Field types
 The `type` object have a main proprety that is `name` and can have other props depending on the type name. Here you can see the possible types and their props:
 - `string`: generates input or textarea and has the next props:
   - `maxChars`: number representing the maximum number of characters. 
   - `validation`: string representing the validation type.
+
 - `richText`: generates a rich text editor.
+
 - `number`: generates an input of type number.
+
 - `dropdown`: generates a dropdown and has the next props:
   - `items`: collection of objects. Each object must be named with a language code. The value of the object is an array of objects with the next props:
     - `value`: string representing the value of the dropdown item
     - `name`: string representing the label of the dropdown item
+
 - `configurator`: generates a configurator and has the next props:
   - `enabledElements`: array of strings representing the enabled elements in the configurator
+
 - `date`: generates a date picker.
+
 - `color`: generates a color picker.
+
 - `toggle`: generates a toggle and has the next props:
   - `default`: boolean representing the default value of the toggle
+
 - `tags`: generates a tags input and has the next props:
     - `maxCount`: number representing the maximum number of tags
+
 - `map`: generates a map and has the next props:
   - `center`: object with the next props:
     - `lat`: number representing the latitude of the center of the map
     - `lng`: number representing the longitude of the center of the map
+
 - `component`: generates a component and has the next props:
   - `schemaFrom`: string representing the name of the component that will be used as schema
   - `schemaFromFieldName`: string representing the name of the field in the API
   - `referenceExisting`: boolean representing if the component can be referenced from an existing component or new one must be created
+
 - `collection`: generates a collection and has the next props:
   - `schemaFrom`: string representing the name of the collection that will be used as schema
   - `schemaFromFieldName`: string representing the name of the field in the API
   - `referenceExisting`: boolean representing if the collection can be referenced from an existing collection or new one must be created
+
 - `media`: generates a media upload component and has the next props:
   - `multiple`: boolean representing if the media component can have multiple files
   - `types`: array of strings representing the allowed media types
+
 - `video`: generates a video link component and has the next props:
   - `provider`: string representing the video provider 
 
