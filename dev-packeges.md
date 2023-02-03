@@ -1,5 +1,13 @@
 # NPM Packages
 
+## @alt-digital packages
+
+All of the NPM packages managed by Alt Digital can be found here:
+<https://www.npmjs.com/org/alt-digital>
+
+
+## Other packages
+
 ### Date and time
 - date-fns <https://www.npmjs.com/package/date-fns>
 - react-datepicker <https://www.npmjs.com/package/react-datepicker>
@@ -31,7 +39,3 @@
 - puppeteer <https://www.npmjs.com/package/puppeteer>
 - himalaya <https://www.npmjs.com/package/himalaya>
 - pdfmake <https://www.npmjs.com/package/pdfmake>
-
-### Authentication and authorization (aki) ???
-
-### Other backend (aki) ???
