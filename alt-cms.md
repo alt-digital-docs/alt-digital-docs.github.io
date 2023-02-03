@@ -69,6 +69,7 @@ The `type` object have a main proprety that is `name` and can have other props d
 
 - `number`: generates an input of type number.
 
+
 - `dropdown`: generates a dropdown and has the next props:
   - `items`: collection of objects. Each object must be named with a language code. The value of the object is an array of objects with the next props:
     - `value`: string representing the value of the dropdown item
@@ -87,6 +88,7 @@ The `type` object have a main proprety that is `name` and can have other props d
 
 - `tags`: generates a tags input and has the next props:
     - `maxCount`: number representing the maximum number of tags
+
 
 - `map`: generates a map and has the next props:
   - `center`: object with the next props:
