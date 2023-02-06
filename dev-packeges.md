@@ -14,6 +14,7 @@ All of the NPM packages managed by Alt Digital can be found here:
 
 ### Animation
 - react-transition-group <https://www.npmjs.com/package/react-transition-group>
+- react-intersection-observer <https://www.npmjs.com/package/react-intersection-observer>
 - react-visibility-sensor <https://www.npmjs.com/package/react-visibility-sensor>
 - react-lottie <https://www.npmjs.com/package/react-lottie>
 - react-headroom <https://www.npmjs.com/package/react-headroom>
