@@ -17,6 +17,7 @@
 - check page bundle size when building on CI/CD
 - check if pages are static that need to be static on CI/CD
 - run lighthouse and check `SEO` and best `practices` and fix accordingly
+- check if every page has one `<h1>` tag
 - inputs have validation errors
 - modals have body scroll lock `https://www.npmjs.com/package/body-scroll-lock`
 - important modals that have to be crawled have deep link
