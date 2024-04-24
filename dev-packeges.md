@@ -49,5 +49,5 @@ All of the NPM packages managed by Alt Digital can be found here:
 ### Testing
 
 - jest <https://www.npmjs.com/package/jest>
-- react-testing-library <https://www.npmjs.com/package/react-testing-library>
+- react-testing-library <https://www.npmjs.com/package/@testing-library/react>
 - cypress <https://www.npmjs.com/package/cypress>
